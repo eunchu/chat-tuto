@@ -28,5 +28,6 @@ export default NextAuth({
   // 원하는 화면으로 매핑
   pages: {
     signIn: "/login",
+    signOut: "/",
   },
 });

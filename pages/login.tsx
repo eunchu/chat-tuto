@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { Input } from "antd";
+import { Button } from "@chakra-ui/react";
+import { ArrowForwardIcon } from "@chakra-ui/icons";
 import { signIn } from "next-auth/client";
 
 const Container = styled.section``;
@@ -8,9 +9,9 @@ const Container = styled.section``;
 const Login = () => {
   return (
     <Container>
-      <Input />
-      <Input />
-      <button>Login</button>
+      <Button colorScheme="twitter" size="md" rightIcon={<ArrowForwardIcon />}>
+        Login
+      </Button>
     </Container>
   );
 };
